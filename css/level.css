@@ -1,0 +1,42 @@
+.kotak{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+}
+.kotak:hover{
+    background-color: rgb(238, 255, 0);
+}
+
+body{
+    background: linear-gradient(320deg, #000000, #535353);
+}
+
+.header{
+    position: sticky;
+    background-color: rgba(217, 28, 255, 0.596);
+    padding-bottom: 10px;
+    top: 0;
+    padding-top: 10px;
+}
+
+.hfont{
+    text-align: center;
+    color: aliceblue;
+    text-shadow: red 2px 2px;
+
+}
+.baris{
+        padding-top: 50px;
+}
+
+@media only screen and (width > 500px){
+    .kotak{
+        background-color: rgb(255, 255, 255);
+        width: 50px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 16px;
+    }
+}

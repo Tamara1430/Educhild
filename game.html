@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alien Shooter</title>
     <link rel="stylesheet" href="css/game.css">
 </head>
 <body>
-    <div style="background-image: url(https://cdn.pixabay.com/animation/2023/03/11/15/47/15-47-31-763_512.gif)" style="height: 400px;">
-        <div class="player"><img src="https://cdn.pixabay.com/animation/2024/12/11/15/54/15-54-52-60_512.gif" width="100px" style="margin-left: 400px;"></div>
-        <div class="player"><img src="asset/pesawat.png" width="100px"></div>
+    <div id="score-board">Score: 0</div>
+    <div id="game-over" class="hidden">Game Over!</div>
+    <div id="game-area">
+        <div id="player"></div>
     </div>
+    <script src="javascript/game.js"></script>
 </body>
 </html>

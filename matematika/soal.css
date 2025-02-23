@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+.Head{
+    text-align: center;
+    color: white;
+}
+
+
+.level{
+    margin-left: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(55.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color : #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+body{
+    align-items: center;
+    display: flex;
+    font-family: 'dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+    background: linear-gradient(320deg, #000000, #5e5e5e);
+}
+
+.pertanyaan{
+    text-align: center;
+    color: white;
+}
+.bulan{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

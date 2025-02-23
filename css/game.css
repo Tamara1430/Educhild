@@ -1,4 +1,70 @@
-.player {
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#score-board {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    z-index: 1000;
+    
+}
+
+#game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: red;
+    display: none;
+    z-index: 1000;
+}
+
+#game-area {
     position: relative;
-    padding-top: 10%;
+    width: 100vw;
+    height: 100vh;
+}
+
+#player {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; /* Sesuaikan dengan ukuran gambar */
+    height: 50px; /* Sesuaikan dengan ukuran gambar */
+    background-image: url('../asset/player.png'); /* Path ke gambar */
+    background-size: cover; /* Pastikan gambar menutupi elemen */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    background-position: center; /* Posisikan gambar di tengah */
+}
+
+
+.alien {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../asset/musuh.png');
+    background-size: cover; /* Pastikan gambar menutupi elemen */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    background-position: center; /* Posisikan gambar di tengah */
+
+}
+
+.bullet {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: red;
+    border-radius: 2px;
+}
+
+.hidden {
+    display: none;
 }
